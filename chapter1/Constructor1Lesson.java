@@ -12,6 +12,9 @@ public class Constructor1Lesson {
 class Chicken{
     int numEggs = 0;
     String name;
+    {
+        numEggs = 100;
+    }
     public Chicken(){
         name = "Duke";
     }

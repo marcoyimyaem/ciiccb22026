@@ -9,7 +9,11 @@ public class PrimitivesLesson {
         float f = 3.14F;
         double d = 5.1D;
         long i = 56l;
-        char c = 5657;
+        char c = 43442;
         System.out.println(c);
+        int binaryNumber = 0B101;
+        System.out.println(binaryNumber);
+        int n=1,m=012,k=0xa;
+        System.out.println(n+m+k);
     }
 }

@@ -6,6 +6,11 @@ public class InstanceIniLesson{
     int code =1;
     {
         System.out.println(code);
+        code=-1;
+    }
+    {
+        System.out.println(code);
+        code=0;
     }
     public static void main(String[] args) {
         InstanceIniLesson ini = new InstanceIniLesson();
