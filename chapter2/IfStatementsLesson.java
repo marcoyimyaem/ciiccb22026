@@ -33,7 +33,8 @@ public class IfStatementsLesson {
         switch(dayOfWeek){
             
             case 1: System.out.println("Monday");
-                    break;
+                  
+            break;
             case 2: System.out.println("Tuesday");
                     break;
             case 3: System.out.println("Wednesday");
