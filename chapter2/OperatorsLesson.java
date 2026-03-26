@@ -12,5 +12,9 @@ public class OperatorsLesson {
         int p = 3;
         System.out.println(++p+ p++);
         System.out.println(!false);
+        // (type) value or variable;
+        int g = (byte)26;
+        byte w = (byte)g;
+        System.out.println();
 }
 }
