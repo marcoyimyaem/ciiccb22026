@@ -36,7 +36,7 @@ public class LoopsLesson {
         // for(int qq = intSample1();true;qq=1,System.out.println(qq=21),qq=0){
         //     System.out.println();
         // }
-        String[] colors ={"black","red","pink","yellow","white","blue"}; 
+        String[] colors ={"black","red","pink","yellow","white","blue","violet"}; 
         for(String color: colors)
             System.out.println("Color: "+color);
         ROW_TABLE: for(int p = 1;p<=10;p++){
