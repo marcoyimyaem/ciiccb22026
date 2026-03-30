@@ -7,7 +7,7 @@ package chapter1;
  */
 
 public class Toy{
-    public String name;
+    public String name = "Gundam";
     public String brand;
     public double price;
     public int quantity;
