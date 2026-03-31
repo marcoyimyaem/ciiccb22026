@@ -13,7 +13,9 @@ public class SwitchLesson {
             case 4: System.out.println("Hello Thur");break;
             case friDate: System.out.println("Hello Fridate");break;
             
+            
 
         }
+        integer a = 21;
     }
 }
