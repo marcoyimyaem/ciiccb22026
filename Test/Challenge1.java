@@ -1,4 +1,4 @@
-package Test;
+
 
 import java.util.Random;
 import java.util.Scanner;
@@ -14,5 +14,6 @@ public class Challenge1 {
             char a = (char)(r.nextInt(126 - 32+1)+32);
             sb.append(a);
         }
+        System.out.println(sb);
     }
 }
