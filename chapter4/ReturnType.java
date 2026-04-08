@@ -1,5 +1,7 @@
 package chapter4;
 
+import chapter1.Toy;
+
 public class ReturnType {
     void startEngine(){
         return;
@@ -32,5 +34,18 @@ public class ReturnType {
 }
 
 class Avocado{
+    //  returnType method1(method2){ return returnType}
 
+    // Avocado method1(Toy toy){
+    //     return new Avocado();
+    // }
+    // Toy method2(){
+    //     return new Toy();
+    // }
+    // public static void main(String[] args) {
+    //     Avocado av1 = new Avocado();
+    //     Object fakeToy = new Object();
+    //     av1.method1(av1.method2());
+    //     av1.method1((Toy)(fakeToy));
+    // }
 }
