@@ -1,4 +1,4 @@
-package chapter5;
+
 
 import java.util.*;
 
@@ -12,7 +12,7 @@ public class InheritanceLesson{
 final class FinalParent{
     int number;
     void getParent(){
-        
+
     }
 }
 
@@ -46,7 +46,7 @@ class MountainLion extends Lion{
     public MountainLion(String name, int age,int LionId,String locationString){
         super(name, age, LionId);
         this.locationString = locationString;
-        
+
     }
     public static void main(String[] args) {
         MountainLion ml = new MountainLion("anya", 0, 0, null);
@@ -58,39 +58,39 @@ class Canine{
     static int dogFoodID = 5234;
     public boolean hasFangs = true;
     public double getAverageWeight(){
-            return 50;
-     }
-     
-     
+        return 50;
+    }
+
+
 
 }
 class Pug extends Canine{
-    
-    
+
+
     public double getAverageWeight(){
         this.hasFangs = false;
         System.out.println("Pug: "+hasFangs+"\nCanine: "+super.hasFangs);
         return super.getAverageWeight()-30;
- }
+    }
 }
 class Wolf extends Canine{
     public double getAverageWeight(){
         return super.getAverageWeight()+20;
- }
+    }
     Canine getAnimal(){
         Wolf w1 = null;
         return w1;
     }
- public static void main(String[] args) {
-    System.out.println(new Canine().getAverageWeight());
-    System.out.println(new Wolf().getAverageWeight());
-    System.out.println(new Pug().getAverageWeight());
-    Hayop h1 =  new Dog();
-    
-    
- }
-}
+    public static void main(String[] args) {
+        System.out.println(new Canine().getAverageWeight());
+        System.out.println(new Wolf().getAverageWeight());
+        System.out.println(new Pug().getAverageWeight());
+//        Hayop h1 =  new Dog();
+        System.out.println(CanBurrow2.isInWater());
 
+    }
+}
+class Hayoup{}
 abstract class Hayop{
     int age;
     String name;
@@ -103,7 +103,7 @@ abstract class Hayop{
     abstract List<Double> CanineList(String n);
 }
 abstract class Mammal extends Hayop{
-    
+
     abstract void sayImMammal();
 }
 class Dog extends Mammal{
@@ -118,17 +118,68 @@ class Dog extends Mammal{
         System.out.println("Im a Mammal");
     }
     public void setAge(int age){
-        
+
     }
-    // @Override // error
-    // List<Object> CanineList(String n) {
-    //     return null;
-    // }
+
+    @Override
+    List<Double> CanineList(String n) {
+        return null;
+    }
+    //
+
+
+
+}
+abstract interface CanBurrow{
+    public static final int MINIMUM_DEPTH = 2;
+    public abstract int getMaximumDepth();
+}
+interface CanBurrow2 extends CanBurrow{
+    int MINIMUM_DEPTH2 = 2;
+    int getMaximumDepth2();
+    default int getMinDepth(){
+        return 1;
+    }
+    static boolean isInWater(){
+        return false;
+    }
+
+}
+class FieldMouse extends Hayop implements CanBurrow,CanBurrow2{
+    public int getMaximumDepth(){
+        return MINIMUM_DEPTH -1;
+    }
+    public int getMaximumDepth2(){
+        return MINIMUM_DEPTH;
+    }
+    @Override
+    public String getName() {
+        return name;}
+    @Override
+    int getAge() {
+        return age;
+    }
+    @Override
+    void setAge(int age) {
+    }
     @Override
     List<Double> CanineList(String n) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'CanineList'");
     }
-    
-
 }
+
+//class extends class
+//class extends abstract
+// abstract extends abstract
+// abstract extends class
+//interface extends interface
+//class implements interface
+//abstract implements interface
+//interface implements interface
+
+//class extends class implements interface
+//abstract extends class implements interface
+
+//class extends class implements interface1, interface2, interface3
+//abstract extends class implements interface1, interface2, interface3
