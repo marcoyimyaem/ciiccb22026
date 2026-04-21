@@ -16,6 +16,6 @@ public class SwitchLesson {
             
 
         }
-        integer a = 21;
+        // integer a = 21;
     }
 }
